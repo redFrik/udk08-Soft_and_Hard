@@ -1,0 +1,17 @@
+//part numbers and prices from segor.de
+
+1	ATtiny2313-20PU		2,40
+1	DILLC20-U		0,20
+2	MF 68R-1%		0,05*2= 0,1
+1	ELRA 10u-35/105'/4x7	0,1
+1	u10-R2.5-X7R		0,1
+1	MF 2k2-1%		0,05
+2	ZD 3V6			0,1*2= 0,2
+1	Q 12,0 MHz-LP		0,6
+2	27p-R5.0-N300		0,1*2= 0,2
+1	USB-A ST-Print		0,7
+	ribbon cable
+	board
+	wire
+
+2.4+0.2+0.1+0.1+0.1+0.05+0.2+0.6+0.2+0.7= €4.65

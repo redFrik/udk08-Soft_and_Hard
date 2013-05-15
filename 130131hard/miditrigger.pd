@@ -1,0 +1,17 @@
+#N canvas 815 218 450 300 10;
+#X obj 93 182 noteout;
+#X obj 94 68 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#X obj 94 91 * 100;
+#X text 92 222 set iac bus as midi output in mid preferences;
+#X msg 94 132 80 \$1;
+#X obj 178 67 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 178 90 * 100;
+#X msg 178 131 81 \$1;
+#X connect 1 0 2 0;
+#X connect 2 0 4 0;
+#X connect 4 0 0 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 7 0 0 0;

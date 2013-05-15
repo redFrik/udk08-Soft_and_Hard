@@ -1,0 +1,25 @@
+#N canvas 311 140 1023 594 16;
+#X obj 95 34 osc~ 400;
+#X obj 250 27 phasor~ 55;
+#X obj 105 138 dac~;
+#X text 169 134 this is the output to speaker left&right channels;
+#X obj 405 35 noise~ 0.1;
+#X obj 198 311 osc~ 404;
+#X obj 147 377 *~ 0.1;
+#X obj 155 436 dac~;
+#X obj 487 362 osc~ 400;
+#X obj 591 361 osc~ 404;
+#X obj 545 489 dac~;
+#X obj 540 427 *~;
+#X text 92 264 first add and then mul;
+#X text 503 314 just mul (ring mod two signals);
+#X text -49 493 Ndef(test \, SinOsc.ar(400)+SinOsc.ar(404)*0.1).play
+;
+#X text 468 533 Ndef(test2 \, SinOsc.ar(400)*SinOsc.ar(404)).play;
+#X obj 94 312 osc~;
+#X text 547 457 connect here to hear it;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 8 0 11 0;
+#X connect 9 0 11 1;
+#X connect 16 0 6 0;

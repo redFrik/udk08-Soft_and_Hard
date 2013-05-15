@@ -1,0 +1,31 @@
+#N canvas 239 92 705 448 16;
+#X obj 225 256 osc~ 404;
+#X obj 174 322 *~ 0.1;
+#X obj 182 381 dac~;
+#X text 119 209 first add and then mul;
+#X obj 35 71 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 37 215 * 10;
+#X floatatom 14 261 5 0 0 0 - - -;
+#X obj 341 80 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 343 224 * 10;
+#X floatatom 320 270 5 0 0 0 - - -;
+#X obj 121 257 osc~;
+#X text 4 48 ctrl+click to change properties;
+#X obj 603 90 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X floatatom 617 265 5 0 0 0 - - -;
+#X obj 609 238 * 10;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 1 0 2 1;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 6 0 10 0;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 9 0 0 0;
+#X connect 10 0 1 0;
+#X connect 12 0 14 0;
+#X connect 14 0 13 0;

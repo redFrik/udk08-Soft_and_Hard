@@ -1,0 +1,143 @@
+#N canvas 714 233 707 510 10;
+#X declare -lib mrpeach;
+#X msg 159 26 open 0x16c0 0x05dc;
+#X msg 217 61 poll 10;
+#X obj 230 145 print;
+#X obj 217 169 route abs;
+#X obj 217 188 route abs_x abs_y;
+#X obj 64 319 t f f f f f f f f;
+#X obj 27 372 & 1;
+#X obj 27 391 == 0;
+#X obj 27 410 change;
+#X obj 69 391 == 0;
+#X obj 69 410 change;
+#X obj 111 391 == 0;
+#X obj 111 410 change;
+#X obj 153 391 == 0;
+#X obj 153 410 change;
+#X obj 195 391 == 0;
+#X obj 195 410 change;
+#X obj 237 391 == 0;
+#X obj 237 410 change;
+#X obj 279 391 == 0;
+#X obj 279 410 change;
+#X obj 321 391 == 0;
+#X obj 321 410 change;
+#X obj 69 372 & 2;
+#X obj 111 372 & 4;
+#X obj 153 372 & 8;
+#X obj 195 372 & 16;
+#X obj 237 372 & 32;
+#X obj 279 372 & 64;
+#X obj 321 372 & 128;
+#X obj 27 440 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 69 440 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 111 440 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 153 440 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 195 440 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 237 440 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 279 440 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 321 440 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 436 372 & 1;
+#X obj 436 391 == 0;
+#X obj 436 410 change;
+#X obj 478 391 == 0;
+#X obj 478 410 change;
+#X obj 541 391 == 0;
+#X obj 541 410 change;
+#X obj 583 391 == 0;
+#X obj 583 410 change;
+#X obj 625 391 == 0;
+#X obj 625 410 change;
+#X obj 478 372 & 2;
+#X obj 541 372 & 16;
+#X obj 583 372 & 32;
+#X obj 625 372 & 64;
+#X obj 436 440 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 478 440 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 541 440 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 583 440 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 625 440 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 456 319 t f f f f f;
+#X obj 383 17 import mrpeach;
+#X obj 383 103 udpsend;
+#X msg 419 133 connect 127.0.0.1 57120;
+#X obj 383 80 packOSC;
+#X obj 383 56 prepend /hid;
+#X obj 217 122 hid;
+#X connect 0 0 64 0;
+#X connect 1 0 64 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 4 1 58 0;
+#X connect 5 0 6 0;
+#X connect 5 1 23 0;
+#X connect 5 2 24 0;
+#X connect 5 3 25 0;
+#X connect 5 4 26 0;
+#X connect 5 5 27 0;
+#X connect 5 6 28 0;
+#X connect 5 7 29 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 8 0 30 0;
+#X connect 9 0 10 0;
+#X connect 10 0 31 0;
+#X connect 11 0 12 0;
+#X connect 12 0 32 0;
+#X connect 13 0 14 0;
+#X connect 14 0 33 0;
+#X connect 15 0 16 0;
+#X connect 16 0 34 0;
+#X connect 17 0 18 0;
+#X connect 18 0 35 0;
+#X connect 19 0 20 0;
+#X connect 20 0 36 0;
+#X connect 21 0 22 0;
+#X connect 22 0 37 0;
+#X connect 23 0 9 0;
+#X connect 24 0 11 0;
+#X connect 25 0 13 0;
+#X connect 26 0 15 0;
+#X connect 27 0 17 0;
+#X connect 28 0 19 0;
+#X connect 29 0 21 0;
+#X connect 38 0 39 0;
+#X connect 39 0 40 0;
+#X connect 40 0 53 0;
+#X connect 41 0 42 0;
+#X connect 42 0 54 0;
+#X connect 43 0 44 0;
+#X connect 44 0 55 0;
+#X connect 45 0 46 0;
+#X connect 46 0 56 0;
+#X connect 47 0 48 0;
+#X connect 48 0 57 0;
+#X connect 49 0 41 0;
+#X connect 50 0 43 0;
+#X connect 51 0 45 0;
+#X connect 52 0 47 0;
+#X connect 58 0 38 0;
+#X connect 58 1 49 0;
+#X connect 58 2 50 0;
+#X connect 58 3 51 0;
+#X connect 58 4 52 0;
+#X connect 61 0 60 0;
+#X connect 62 0 60 0;
+#X connect 63 0 62 0;
+#X connect 64 0 2 0;
+#X connect 64 0 3 0;
+#X connect 64 0 63 0;

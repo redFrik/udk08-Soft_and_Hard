@@ -1,0 +1,114 @@
+#N canvas 524 22 954 580 10;
+#X obj 38 159 gemwin;
+#X msg 89 110 create;
+#X msg 340 -39 open \$1;
+#X obj 342 -63 openpanel;
+#X obj 340 -81 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 11 224 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 89 133 destroy;
+#X msg 86 160 dimen 640 480;
+#X obj 652 207 print;
+#X msg 520 137 devices;
+#X text 606 -15 photojpg .mov recommended format;
+#X text 5 250 last click toggle to start generating video;
+#X text 578 135 click to list devices;
+#X text 618 171 change index 2 here to match your arduino device index
+;
+#X msg 86 193 frame 30;
+#X obj 516 172 comport 12 38400;
+#X floatatom 513 227 5 0 0 0 - - -;
+#X obj 514 247 hsl 128 15 0 255 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 233 -7 pix_film;
+#X obj 204 127 pix_texture;
+#X floatatom 278 168 5 0 0 0 - - -;
+#X floatatom 317 167 5 0 0 0 - - -;
+#X obj 225 -59 gemhead;
+#X obj 205 171 rectangle 4 3;
+#X text 48 76 then click dimen and create;
+#X obj 275 27 print;
+#X text 559 291 threshold;
+#X obj 512 342 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 514 320 change;
+#X obj 511 293 > 100;
+#X obj 493 72 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 243 68 pix_mean_color;
+#X obj 346 258 unpack f f f;
+#X obj 369 286 +;
+#X obj 354 308 +;
+#X floatatom 357 335 5 0 0 0 - - -;
+#X obj 359 360 hsl 128 15 0 3 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 356 390 < 0.1;
+#X obj 355 414 change;
+#X obj 353 439 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 394 387 threshold for black frame;
+#X text 364 -88 first load a movie;
+#X obj 684 316 line;
+#X msg 685 284 0 \, 100 5000;
+#X obj 683 345 > 99;
+#X obj 682 383 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 515 202 gate;
+#X obj 684 257 sel 1;
+#X text 767 284 block for 5sec;
+#X text 702 381 if blocked or not;
+#X obj 156 -13 loadbang;
+#X msg 150 22 auto 1;
+#X obj 222 -86 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 512 434 sel 0;
+#X msg 512 453 1;
+#X connect 1 0 0 0;
+#X connect 2 0 18 0;
+#X connect 3 0 2 0;
+#X connect 4 0 3 0;
+#X connect 5 0 0 0;
+#X connect 6 0 0 0;
+#X connect 7 0 0 0;
+#X connect 9 0 15 0;
+#X connect 14 0 0 0;
+#X connect 15 0 46 1;
+#X connect 15 1 8 0;
+#X connect 16 0 17 0;
+#X connect 17 0 29 0;
+#X connect 18 0 31 0;
+#X connect 18 1 25 0;
+#X connect 19 0 23 0;
+#X connect 20 0 23 1;
+#X connect 21 0 23 2;
+#X connect 22 0 18 0;
+#X connect 27 0 47 0;
+#X connect 27 0 52 0;
+#X connect 27 0 53 0;
+#X connect 28 0 27 0;
+#X connect 29 0 28 0;
+#X connect 30 0 15 0;
+#X connect 31 0 19 0;
+#X connect 31 1 32 0;
+#X connect 32 0 34 0;
+#X connect 32 1 33 0;
+#X connect 32 2 33 1;
+#X connect 33 0 34 1;
+#X connect 34 0 35 0;
+#X connect 35 0 36 0;
+#X connect 36 0 37 0;
+#X connect 37 0 38 0;
+#X connect 38 0 39 0;
+#X connect 39 0 30 0;
+#X connect 42 0 44 0;
+#X connect 43 0 42 0;
+#X connect 44 0 45 0;
+#X connect 45 0 46 0;
+#X connect 46 0 16 0;
+#X connect 47 0 43 0;
+#X connect 50 0 51 0;
+#X connect 51 0 18 0;
+#X connect 52 0 22 0;
+#X connect 53 0 54 0;
+#X connect 54 0 39 0;

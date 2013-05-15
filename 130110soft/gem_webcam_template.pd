@@ -1,0 +1,18 @@
+#N canvas 935 22 494 570 16;
+#X obj 93 55 gemhead;
+#X obj 93 494 gemwin;
+#X msg 120 404 create;
+#X msg 129 443 1;
+#X text 214 401 first create \, then start;
+#X obj 93 105 pix_video;
+#X obj 93 148 pix_texture;
+#X floatatom 172 192 5 0 0 0 - - -;
+#X obj 89 236 rectangle 4 3;
+#X floatatom 242 192 5 0 0 0 - - -;
+#X connect 0 0 5 0;
+#X connect 2 0 1 0;
+#X connect 3 0 1 0;
+#X connect 5 0 6 0;
+#X connect 6 0 8 0;
+#X connect 7 0 8 1;
+#X connect 9 0 8 2;

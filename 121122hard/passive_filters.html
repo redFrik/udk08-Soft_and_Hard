@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title></title>
+<meta name="Generator" content="Cocoa HTML Writer">
+<meta name="CocoaVersion" content="1187.37">
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px}
+p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px Monaco; min-height: 12.0px}
+p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px Monaco; color: #cd1c00}
+p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px Monaco}
+p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 24.0px Monaco; color: #cd1c00}
+p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 24.0px Monaco}
+p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px Monaco; color: #cd1c00; min-height: 12.0px}
+p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 23.0px Monaco}
+p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 23.0px Monaco; min-height: 31.0px}
+span.s1 {font: 12.0px Helvetica}
+span.s2 {color: #000000}
+span.s3 {color: #0326cb}
+span.Apple-tab-span {white-space:pre}
+</style>
+</head>
+<body>
+<p class="p1"><span class="s1"><img src="attachments/passive_filters/Pasted Graphic.png" alt="attachments/passive_filters/Pasted Graphic.png"></span></p>
+<p class="p2"><br></p>
+<p class="p3">//--example: 10k with 30kHz cutoff</p>
+<p class="p4">a= 1/(2pi*10000*30000)</p>
+<p class="p3"><span class="s2">a*(10**12)<span class="Apple-tab-span">	</span></span>//show result in picofarads</p>
+<p class="p4">≈ 531pF</p>
+<p class="p2"><br></p>
+<p class="p3">//--example: 10k with 470pF cap</p>
+<p class="p4">1/(2pi*10000*(470/(10**12)))</p>
+<p class="p4">≈ 33862kHz</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p5">//--example: 100k with 0.1uF cap</p>
+<p class="p6">1/(2pi*100000*(0.1/(10**6)))</p>
+<p class="p6">≈ 15.9<span class="s3">Hz</span></p>
+<p class="p7"><br></p>
+<p class="p7"><br></p>
+<p class="p3">//--example: 10k with 0.1uF cap</p>
+<p class="p4">1/(2pi*10000*(0.1/(10**6)))</p>
+<p class="p4">≈ 159<span class="s3">Hz</span></p>
+<p class="p7"><br></p>
+<p class="p7"><br></p>
+<p class="p3">//high pass - useful for removing dc offset</p>
+<p class="p7"><br></p>
+<p class="p1"><span class="s1"><img src="attachments/passive_filters/Pasted Graphic 2.png" alt="attachments/passive_filters/Pasted Graphic 2.png"></span></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="s1"><img src="attachments/passive_filters/Pasted Graphic 1.png" alt="attachments/passive_filters/Pasted Graphic 1.png"></span></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p4">http://www.youtube.com/watch?v=ic_yEUV7Y3c</p>
+<p class="p2"><br></p>
+<p class="p4">http://www.youtube.com/watch?v=TQB1VlLBgJE</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p8"><span class="s3">GUI</span>.qt</p>
+<p class="p8">s.boot</p>
+<p class="p8">s.scope</p>
+<p class="p9"><br></p>
+<p class="p9"><br></p>
+<p class="p8">{<span class="s3">HPF</span>.ar((<span class="s3">SinOsc</span>.ar*0.02)+2.5, 16)}.play</p>
+<p class="p9"><br></p>
+<p class="p8"><span class="s3">DC</span>= <span class="s3">Direct</span> current (e.g. 5v direct current from arduino)</p>
+<p class="p9"><br></p>
+<p class="p8">{<span class="s3">SoundIn</span>.ar(0)}.play</p>
+<p class="p9"><br></p>
+<p class="p9"><br></p>
+<p class="p9"><br></p>
+<p class="p8">{<span class="s3">HPF</span>.ar(<span class="s3">SinOsc</span>.ar(0.1), 16)}.play</p>
+<p class="p8">{<span class="s3">SinOsc</span>.ar(0.001, 0.5pi)}.play</p>
+<p class="p8">{<span class="s3">HPF</span>.ar(<span class="s3">DC</span>.ar(1), 16)}.play</p>
+<p class="p9"><br></p>
+<p class="p8">lm386</p>
+<p class="p8">tl082</p>
+</body>
+</html>

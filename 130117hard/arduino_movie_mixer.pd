@@ -1,0 +1,89 @@
+#N canvas 333 22 1020 674 10;
+#X obj 76 261 gemwin;
+#X msg 127 212 create;
+#X obj 271 95 pix_film;
+#X msg 314 -52 open \$1;
+#X obj 316 -76 openpanel;
+#X obj 314 -94 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 242 108 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X msg 239 129 auto \$1;
+#X obj 242 229 pix_texture;
+#X obj 360 232 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 49 326 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 453 95 pix_film;
+#X msg 496 -52 open \$1;
+#X obj 498 -76 openpanel;
+#X obj 496 -94 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 424 108 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X msg 421 129 auto \$1;
+#X msg 127 235 destroy;
+#X floatatom 316 270 5 0 0 0 - - -;
+#X floatatom 355 269 5 0 0 0 - - -;
+#X obj 263 43 gemhead;
+#X obj 445 42 gemhead;
+#X obj 260 195 pix_mix;
+#X msg 124 262 dimen 640 480;
+#X obj 243 273 rectangle 4 3;
+#X obj 556 305 match nn 13 10;
+#X obj 537 420 line;
+#X obj 545 350 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 537 385 \$1 1000;
+#X obj 690 309 print;
+#X msg 558 239 devices;
+#X obj 554 274 comport 2 38400;
+#X text 644 87 photojpg .mov recommended format;
+#X obj 125 16 loadbang;
+#X msg 124 41 1;
+#X text 299 -123 first load two movies;
+#X text 86 178 then click dimen and create;
+#X text 43 352 last click toggle to start generating video;
+#X text 616 237 click to list devices;
+#X text 656 273 change index 2 here to match your arduino device index
+;
+#X text 596 386 1000 is crossfade time in ms;
+#X obj 313 129 print;
+#X obj 509 129 print;
+#X msg 124 295 frame 30;
+#X connect 1 0 0 0;
+#X connect 2 0 22 0;
+#X connect 2 1 41 0;
+#X connect 3 0 2 0;
+#X connect 4 0 3 0;
+#X connect 5 0 4 0;
+#X connect 6 0 7 0;
+#X connect 7 0 2 0;
+#X connect 8 0 24 0;
+#X connect 9 0 22 2;
+#X connect 10 0 0 0;
+#X connect 11 0 22 1;
+#X connect 11 1 42 0;
+#X connect 12 0 11 0;
+#X connect 13 0 12 0;
+#X connect 14 0 13 0;
+#X connect 15 0 16 0;
+#X connect 16 0 11 0;
+#X connect 17 0 0 0;
+#X connect 18 0 24 1;
+#X connect 19 0 24 2;
+#X connect 20 0 2 0;
+#X connect 21 0 11 0;
+#X connect 22 0 8 0;
+#X connect 23 0 0 0;
+#X connect 25 0 27 0;
+#X connect 26 0 9 0;
+#X connect 27 0 28 0;
+#X connect 28 0 26 0;
+#X connect 30 0 31 0;
+#X connect 31 0 25 0;
+#X connect 31 1 29 0;
+#X connect 33 0 34 0;
+#X connect 34 0 6 0;
+#X connect 34 0 15 0;
+#X connect 43 0 0 0;
