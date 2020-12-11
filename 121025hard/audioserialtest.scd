@@ -1,8 +1,8 @@
-//--example: select something and press 'esc'
+//--example: select something and press 'shift+esc'
 (
 Document.current.keyDownAction= {|...args|
 	var str;
-	if(args[3]==27, {	//esc key
+	if(args[3]==27, {	//shift+esc key
 		"".postln;
 		str= args[0].selectedString.ascii.clump(6);
 		fork{

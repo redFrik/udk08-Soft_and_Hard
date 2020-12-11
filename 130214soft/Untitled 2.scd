@@ -89,7 +89,7 @@ Ndef(\dry, {SoundIn.ar([0, 1])}).play
 
 //sound file
 
-b= Buffer.read(s, "/Users/Stirling/Public/121129soft/24966__mich3d__catpurring-01.wav")
+b= Buffer.read(s, Document.current.path.dirname++"/../121129soft/24966__mich3d__catpurring-01.wav")
 b.plot
 b.numChannels
 Ndef(\sample, {PlayBuf.ar(b.numChannels, b, loop:1)}).play

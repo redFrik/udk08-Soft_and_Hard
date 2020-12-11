@@ -1,8 +1,8 @@
-wifi					- Û50 hard to correct module - still (large)
-bluetooth				- Û30 (hassle, 10m)
-xbee					- Û20 (good and cheap - lots tutorials)
-nordic				- Û20 (50m, hard program)
-jeenode				- Û16 (supercheap - slow!)
+wifi				- â‚¬50 hard to correct module - still (large)
+bluetooth			- â‚¬30 (hassle, 10m)
+xbee				- â‚¬20 (good and cheap - lots tutorials)
+nordic				- â‚¬20 (50m, hard program)
+jeenode				- â‚¬16 (supercheap - slow!)
 
 //see you next week
 if possible to connect 2 laptops via bluetooth

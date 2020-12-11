@@ -127,14 +127,14 @@ Ndef(\test, {Pan2.ar(WhiteNoise.ar)})
 
 
 //Randomness in sc help
-//http://www.earslap.com/instruction/recreating-the-thx-deep-note
+//https://www.earslap.com/instruction/recreating-the-thx-deep-note
 
 
 
 
 
 
-//subtractive synthesis Å filtered noise
+//subtractive synthesis & filtered noise
 Ndef(\pitch).play
 Ndef(\pitch, {WhiteNoise.ar([0.2, 0.2])})
 Ndef(\pitch, {BPF.ar(WhiteNoise.ar([0.2, 0.2]), 900, 0.001)*7})

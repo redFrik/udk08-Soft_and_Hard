@@ -28,8 +28,8 @@ void serialPrint(int val) {
 
 
 //supercollider code for reading ten 10bit analog values
-//protocol:Ê253 254 nn nn nn nn nn nn nn nn nn nn nn nn nn nn nn nn nn nn nn nn 255
-//nn comes in pairs. Êfirst nn are the upper 8bits and the second are the lower 2 bits. ÊA0 to A9 in order
+//protocol: 253 254 nn nn nn nn nn nn nn nn nn nn nn nn nn nn nn nn nn nn nn nn 255
+//nn comes in pairs. first nn are the upper 8bits and the second are the lower 2 bits. A0 to A9 in order
 (
 var port= SerialPort("/dev/tty.usbmodemfa131", 115200, crtscts: true);
 Routine.run({
@@ -55,7 +55,7 @@ Routine.run({
 							};
 							//--finished - do something here
 							data.postln;
-							
+
 							index= 0;
 						}, {
 							//--something broke or beginning - restart
@@ -65,7 +65,7 @@ Routine.run({
 					});
 				});
 			});
-				
+
 		});
 	};
 });

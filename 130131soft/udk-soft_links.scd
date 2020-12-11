@@ -4,8 +4,8 @@ NOTHING next thursday (7th)
 //--some links and resources
 
 //code pool and live sctwitter feed...
-http://sccode.org
-http://sccode.org/twitter
+https://sccode.org
+https://sccode.org/search?q=twitter
 
 //older examples...
 http://swiki.hfbk-hamburg.de:8888/MusicTechnology/6
@@ -15,8 +15,8 @@ http://www.sussex.ac.uk/Users/nc81/modules/cm1/workshop.html
 http://www.sussex.ac.uk/Users/nc81/code.html
 
 //material from previous semesters
-http://entropie.digital.udk-berlin.de/wiki/Klasse_Generative_Kunst_/_Computational_Art
-
+//http://entropie.digital.udk-berlin.de/wiki/Klasse_Generative_Kunst_/_Computational_Art
+https://redfrik.github.io/udk00-Audiovisual_Programming/
 
 
 

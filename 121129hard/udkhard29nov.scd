@@ -10,18 +10,18 @@ RN-41 class1 - gold 100m, expensive
 
 
 good quality but expensive:
-bluetooth mate silver http://www.sparkfun.com/products/10393
-bluetooth mate gold 
+bluetooth mate silver https://www.sparkfun.com/products/10393
+bluetooth mate gold
 tutorial:
-http://www.sparkfun.com/tutorials/264
+https://www.sparkfun.com/tutorials/264
 there is also bluesmirf silver/gold from sparkfun but i didn't try them yet
 
 
 very cheap.  but works well and are smaller:
 http://dx.com/p/jy-mcu-arduino-bluetooth-wireless-serial-port-module-104299
 tutorials:
-http://byron76.blogspot.de/2011/09/one-board-several-firmwares.html
-http://apirola.wordpress.com/2012/09/05/setup-jy-mcu-bt-board-v1-2/
+https://byron76.blogspot.de/2011/09/one-board-several-firmwares.html
+https://apirola.wordpress.com/2012/09/05/setup-jy-mcu-bt-board-v1-2/
 
 
 

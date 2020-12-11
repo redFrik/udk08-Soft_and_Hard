@@ -7,8 +7,8 @@ s.meter
 
 //sc: no mp3 - only wav or aif
 
-http://freesound.org
-http://audacity.sourceforge.net
+https://freesound.org
+https://http://audacityteam.org
 
 
 

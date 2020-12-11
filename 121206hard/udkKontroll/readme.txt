@@ -1,6 +1,6 @@
 
 get a stk500
-install http://www.obdev.at/products/crosspack/index.html
+install https://www.obdev.at/products/crosspack/index.html
 put the attiny2313 in red slot #3 and connect isp 6pin cable to red
 
 

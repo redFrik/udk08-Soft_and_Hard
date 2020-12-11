@@ -8,7 +8,7 @@ s.waitForBoot{
 		Out.ar(0, src*vol!2);
 	}).add;
 	s.sync;
-	
+
 	Routine.run({
 		inf.do{|i|
 			var x= sin(i*0.05).lincurve(-1, 1, 0, 255, 3).asInteger;

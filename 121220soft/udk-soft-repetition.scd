@@ -71,7 +71,7 @@ Ndef(\feedback, {CombC.ar(SoundIn.ar([0, 1]), 1, LFNoise0.ar(10).range(0.1, 1), 
 
 
 //--soundfiles
-b= Buffer.read(s, "/Users/Stirling/Public/121129soft/51483__suonho__suonho-rmx-berklee-briantranseau-132-let-me-see-ya-bounce-i-crusher.wav");
+b= Buffer.read(s, Document.current.path.dirname++"/../121129soft/51483__suonho__suonho-rmx-berklee-briantranseau-132-let-me-see-ya-bounce-i-crusher.wav");
 Ndef(\sampler).play
 Ndef(\sampler, {PlayBuf.ar(b.numChannels, b, MouseX.kr(-10, 10), loop: 1)}).play
 Ndef(\sampler, {var trig= Impulse.kr(10); PlayBuf.ar(b.numChannels, b, 1, trig, TChoose.kr(trig, [0, b.numFrames*0.2, b.numFrames*0.86]), loop:1)})

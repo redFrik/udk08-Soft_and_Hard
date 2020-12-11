@@ -15,8 +15,11 @@ Ndef(\impulse).stop
 
 //german keyboard layout
 (		//shift+8
+)       //shift+9
 [		//alt+5
+]       //alt+6
 {		//alt+8
+}       //alt+9
 
 //regular rhythms
 
@@ -175,7 +178,7 @@ Ndef(\gesture, {Impulse.ar(Line.ar(1, 100, 5))}).play //from 1 to 100 in 5sec
 Ndef(\gesture, {Impulse.ar(Line.ar(400, 5, 3))}).play
 Ndef(\gesture, {Impulse.ar(Line.ar(5, 0.4, 1))}).play
 
-	
+
 (
 Ndef(\seq, {
 	var tick, mel, freq, dec;	//declare variables here

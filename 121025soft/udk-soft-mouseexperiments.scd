@@ -108,6 +108,6 @@ Spectrogram.new.start
 
 wiki
 
-http://supercollider.sourceforge.net/sc140/
+https://supercollider.github.io/community/sc140.html
 
-http://sccode.org/twitter
+https://sccode.org/search?q=twitter

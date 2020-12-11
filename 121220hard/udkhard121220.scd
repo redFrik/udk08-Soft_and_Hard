@@ -42,7 +42,7 @@ s.waitForBoot{
 		var buf= ~buffers[7];
 		Splay.ar(PlayBuf.ar(buf.numChannels, buf, 1-delta, state, loop: state));
 	}).play;
-	
+
 	Ndef(\y0, {|state= 0, delta= 999|
 		var buf= ~buffers[8];
 		Splay.ar(PlayBuf.ar(buf.numChannels, buf, 1-delta, state, loop: state));
